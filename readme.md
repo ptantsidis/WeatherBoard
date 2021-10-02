@@ -1,5 +1,6 @@
 Create weather board using jscript, jquery primarily.
 user types in city
+use another api to convert to latitude and longitude to use (https://openweathermap.org/api/one-call-api) 
 on pressing button search is saved into array of current cities searched
 each city is then listed below search to re-apply if clicked again
 once butoon/or previous ciy is pressed

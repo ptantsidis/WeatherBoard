@@ -1,0 +1,88 @@
+  
+body {
+    font-family: "Bebas+Neue", "sans-serif"
+}
+
+header {
+    display:block;
+    background-color: rgb(150, 200, 243);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* main {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.search-form {
+    position: fixed;
+    left: 0%;
+    position: relative; 
+    width: 400px;
+    height: 200px;
+    border: 3px;
+    background-color: rgb(214, 210, 210);
+}
+    /* height: 100%; */
+    /* padding: 4rem;  */
+    /* text-align: center;
+    border-style: solid;
+    border-width: .2rem; */
+    /* border-radius: 1rem;
+}
+/* .main-row{
+
+} */
+/* li {
+    text-align: left;
+}
+ .row{
+    columns: 5 ;
+}  */
+/* .today-forecast {
+    background-color: #fff;
+    padding: 1rem;
+
+    /* flex-wrap: wrap; */ 
+    /* justify-content: left; */
+/* } */ 
+/* .fiveday-forecast {
+    column-count: 5;
+    display: inline-block;
+    /* float: left; */
+    /* background-color: #fff;
+    padding: 0, 1rem; */
+    /* width: 20%; */
+/* } */ 
+.card { 
+    border-style: solid;
+    border-width: .2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 20%;
+} 
+.green {
+    background-color: rgb(112, 141, 112);
+}
+.yellow {
+    background-color: rgb(228, 226, 102);
+}
+.orange {
+    background-color: rgb(187, 140, 53);
+}
+.red {
+    background-color: rgb(177, 48, 31);
+}
+.indigo {
+    background-color: rgb(161, 40, 155);
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  
