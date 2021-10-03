@@ -24,11 +24,6 @@ header {
     background-color: rgb(214, 210, 210);
 }
 
-.li {
-    text-align: left;
-    font-size: 1.3rem;
-}
-
 .card { 
     border-style: solid;
     border-width: .2rem;

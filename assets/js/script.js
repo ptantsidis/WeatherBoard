@@ -17,16 +17,15 @@ function displayTime() {
 }
 setInterval(displayTime, 1000);
 
+// get old city to resend
+// cityList.on("click", function (event) {
+//   event.preventDefault();
+//   console.log(event.target );
+//   let oldCity = $(this).parent().val();
+//   console.log(oldCity);
+//   currentForecast(oldCity);
+// })
 
-cityList.on("click", function (event) {
-  event.preventDefault();
-
-  console.log(event.target );
-  let citystring = (event.target);
-  console.log( this, arguments.text );
-  // oldCity = this;
-    // currentForecast(oldCity);
-})
 //create list element as required
 cityBtn.on("click", function (event) {
   event.preventDefault();
@@ -38,7 +37,8 @@ cityBtn.on("click", function (event) {
     cityArray.push(newCity);
     localStorage.setItem("search", JSON.stringify(cityArray));
     currentForecast(newCity);
-  }
+    searchInput.val("");
+    }
 })
 
 function currentForecast(cityname) {
@@ -51,7 +51,6 @@ function currentForecast(cityname) {
       let lat = response.coord.lat;
       let lon = response.coord.lon;
       city = response.name;
-      console.log(response)
       callfiveday(lat, lon);
     })
 }
@@ -63,9 +62,7 @@ function callfiveday(lat, lon) {
     type: "GET"
   })
     .then(function (response) {
-      console.log(response);
       let oneMap = response.daily;
-      console.log(oneMap);
       let htmlcode = "";
       for (let i = 0; i < 6; i++) {
         if (oneMap[i].uvi < 3) {
@@ -92,10 +89,8 @@ function callfiveday(lat, lon) {
           <h4>Wind Speed ${Math.round(response.current.wind_speed) + " mph"}</h4>
           <span><img src="http://openweathermap.org/img/wn/${response.current.weather[0].icon}@2x.png" />
           <h5>Humidity: ${response.current.humidity + " %"}</h5>
-          <h5 class ="${color}">uvi: ${response.current.uvi}</h5>
+          <h5 class ="${color}">uvi: ${oneMap[0].uvi}</h5>
           </div>`)
-          console.log(oneMap[i]);
-          console.log(color);
         }
         else {
           htmlcode += `<div class="card">
@@ -105,8 +100,6 @@ function callfiveday(lat, lon) {
             <span><img src="http://openweathermap.org/img/wn/${oneMap[i].weather[0].icon}@2x.png" />
             <h4 class="${color}">uvi: ${oneMap[i].uvi}</h4>
             </div>`
-            console.log(color)
-            console.log(oneMap[i]);
         }
       }
       $("#fiveday").html(htmlcode)
