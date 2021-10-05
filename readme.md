@@ -12,4 +12,4 @@ Moment also used to display time and convert UTC time to readable day format.
 Most requirements met.
 Git Hub URL: https://github.com/ptantsidis/WeatherBoard.git
 Website:  https://ptantsidis.github.io/WeatherBoard/
-Image: .\assets\Images\WeatherBoardPic.png
+Image: .\assets\Images\WeatherBoardPic.png![WeatherBoardPic](https://user-images.githubusercontent.com/90045665/135943239-6daf061c-8b2e-46ef-bc95-6023a7e0c303.png)
