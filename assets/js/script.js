@@ -43,7 +43,7 @@ cityBtn.on("click", function (event) {
 })
 
 function currentForecast(cityname) {
-  let weatherUrl = APICall + newCity + "&appid=" + APIKey + "&units=imperial";
+    let weatherUrl = APICall + cityname + "&appid=" + APIKey + "&units=imperial";
   $.ajax({
     url: weatherUrl,
     type: "GET"
