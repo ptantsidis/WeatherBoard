@@ -4,7 +4,6 @@ let APICall = "https://api.openweathermap.org/data/2.5/weather?q=";
 let cityBtn = $("#search-btn");
 let cityList = $("#city-list");
 let searchInput = $("#input");
-// let searchAgainEl = $("")
 let newCity = "";
 let oldCity = "";
 let cityArray = [];
@@ -20,14 +19,10 @@ setInterval(displayTime, 1000);
 // get old city to resend
 cityList.on("click", function (event) {
   event.preventDefault();
-  console.log(event.target.textContent);
   let oldCity = event.target.textContent;
   currentForecast(oldCity);
 })
 
-//create list element as required
-//piece needs to be re-written
-//404 error should come before writing the list
 cityBtn.on("click", function (event) {
   event.preventDefault();
   newCity = (searchInput.val());
