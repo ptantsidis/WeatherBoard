@@ -51,10 +51,10 @@ ____
   https://github.com/ptantsidis
   
   ### GitHub Repo
-   https://github.com/ptantsidis/WeatherBoard
+  https://github.com/ptantsidis/WeatherBoard
 
-   ### Heroku Deploy
-   No
+  ### Deploy
+  https://ptantsidis.github.io/WeatherBoard/
 
   ### Images  
-  .\assets\Images\WeatherBoardPic.png
+  .\assets\images\WeatherBoardPic.png
