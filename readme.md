@@ -1,10 +1,6 @@
  # WeatherBoard - API
 ____
-  ## TagLine  
   API WeatherBoard, where temps are found!
-
-  ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-
 ____  
   ## Table of Contents
 ____
