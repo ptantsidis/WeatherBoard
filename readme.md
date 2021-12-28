@@ -1,15 +1,64 @@
-Create weather board using jscript, jquery primarily.
-user types in city
-Used this api ("https://api.openweathermap.org/data/2.5/weather;) to get logitude and latitude. Then used (https://openweathermap.org/api/one-call-api) to get pertinent weather information for today and five days from now.
+ # WeatherBoard - API
+____
+  ## TagLine  
+  API WeatherBoard, where temps are found!
 
-on pressing button search is saved into array of current cities searched
-each city is then listed below search to re-apply if clicked again
-once butoon/or previous ciy is pressed
-Used google fonts for fonts.
-Used botstrap for some designing.
-Jquery and Ajax used with java script.
-Moment also used to display time and convert UTC time to readable day format.
-Most requirements met.
-Git Hub URL: https://github.com/ptantsidis/WeatherBoard.git
-Website:  https://ptantsidis.github.io/WeatherBoard/
-Image: .\assets\Images\WeatherBoardPic.png![WeatherBoardPic](https://user-images.githubusercontent.com/90045665/135943239-6daf061c-8b2e-46ef-bc95-6023a7e0c303.png)
+  ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+____  
+  ## Table of Contents
+____
+  [Installation](#installation)
+
+  *[Description](#desc)
+
+  *[Usage](#usage)
+
+  *[Start](#start)
+  
+  *[Contributions](#contributions)
+
+  *[Contact](#contact)
+
+  *[License](#license)
+
+  *[GitHub Nane](#githubname)
+
+  *[GitHubRepo](#githubrepo)
+
+  *[Images](#images)
+____  
+  ## Installation
+  HTML, Javasript, CSS, JQuery, Ajax, Moment, google fonts, bootstrap and Open Weather Map API. 
+
+  ## Description
+  Find weather for city with 5 day forecast with list of previous searched cities.
+
+  ## Usage
+  Get latest and forecasted weather for any city. Using Open Weather Map API by getting longitude and latittude first for the city. If it exists then re-query the api to get the current weather and forecast for that city. 
+
+  ## Start
+  index.html - start in default browser
+
+  ## Contributions
+  Phil Tantsidis full on code.
+    
+  ###  Contact
+  ptantsidis@hotmail.com
+    
+  ### License
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  (https://opensource.org/licenses/MIT)
+  No
+
+  ### GitHub Name
+  https://github.com/ptantsidis
+  
+  ### GitHub Repo
+   https://github.com/ptantsidis/WeatherBoard
+
+   ### Heroku Deploy
+   No
+
+  ### Images  
+  .\assets\Images\WeatherBoardPic.png
