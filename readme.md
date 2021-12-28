@@ -57,4 +57,4 @@ ____
    No
 
   ### Images  
-  .\assets\Images\WeatherBoardPic.png
+  WeatherBoard/assets/Images/WeatherBoardPic.png
