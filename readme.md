@@ -56,5 +56,6 @@ ____
   ### Deploy
   https://ptantsidis.github.io/WeatherBoard/
 
-  ### Images  Board_pic.png
+  ### Images
  
+![Board_pic](https://user-images.githubusercontent.com/90045665/148067228-5439daf1-8bb8-47a6-b27c-5afd0e048261.png)
